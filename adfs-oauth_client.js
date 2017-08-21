@@ -62,7 +62,7 @@ Adfsoauth.requestCredential = function (options, credentialRequestCompleteCallba
     }).join("&");
 
   OAuth.launchLogin({
-    loginService: "adfsoauth",
+    loginService: "libertyadfsoauth",
     loginStyle: loginStyle,
     loginUrl: loginUrl,
     credentialRequestCompleteCallback: credentialRequestCompleteCallback,
