@@ -1,10 +1,10 @@
-Template.configureLoginServiceDialogForAdfsoauth.helpers({
+Template.configureLoginServiceDialogForLibertyAdfsoauth.helpers({
   siteUrl: function () {
     return Meteor.absoluteUrl();
   }
 });
 
-Template.configureLoginServiceDialogForAdfsoauth.fields = function () {
+Template.configureLoginServiceDialogForLibertyAdfsoauth.fields = function () {
   return [
     {property: 'clientId', label: 'Client ID'},
     {property: 'secret', label: 'Client secret', value: 'none'},
