@@ -1,7 +1,7 @@
-Accounts.oauth.registerService('liberty-adfsoauth');
+Accounts.oauth.registerService('libertyadfsoauth');
 
 if (Meteor.isClient) {
-  Meteor.loginWithLibertyAdfsoauth = function(options, callback) {
+  Meteor.loginWithLibertyadfsoauth = function(options, callback) {
     // support a callback without options
     if (! callback && typeof options === "function") {
       callback = options;
@@ -9,6 +9,6 @@ if (Meteor.isClient) {
     }
 
     var credentialRequestCompleteCallback = Accounts.oauth.credentialRequestCompleteHandler(callback);
-    LibertyAdfsoauth.requestCredential(options, credentialRequestCompleteCallback);
+    Adfsoauth.requestCredential(options, credentialRequestCompleteCallback);
   };
 }

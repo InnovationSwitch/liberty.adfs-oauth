@@ -1,6 +1,6 @@
-LibertyAdfsoauth = {};
+Adfsoauth = {};
 
-OAuth.registerService('liberty-adfsoauth', 2, null, function (query) {
+OAuth.registerService('libertyadfsoauth', 2, null, function (query) {
 
     var config = Companies.findOne({slug: 'liberty'});
 
@@ -96,6 +96,6 @@ var getIdentity = function (accessToken) {
     }
 };
 
-LibertyAdfsoauth.retrieveCredential = function (credentialToken, credentialSecret) {
+Adfsoauth.retrieveCredential = function (credentialToken, credentialSecret) {
     return OAuth.retrieveCredential(credentialToken, credentialSecret);
 };
