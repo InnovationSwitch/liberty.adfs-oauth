@@ -1,4 +1,4 @@
-Adfsoauth = {};
+Trackeradfsoauth = {};
 
 OAuth.registerService('libertyadfsoauth', 2, null, function (query) {
 
@@ -96,6 +96,6 @@ var getIdentity = function (accessToken) {
     }
 };
 
-Adfsoauth.retrieveCredential = function (credentialToken, credentialSecret) {
+Libertyadfsoauth.retrieveCredential = function (credentialToken, credentialSecret) {
     return OAuth.retrieveCredential(credentialToken, credentialSecret);
 };
