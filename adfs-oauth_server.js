@@ -1,4 +1,4 @@
-Trackeradfsoauth = {};
+Libertyadfsoauth = {};
 
 OAuth.registerService('libertyadfsoauth', 2, null, function (query) {
 
