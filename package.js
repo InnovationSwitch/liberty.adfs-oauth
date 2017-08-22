@@ -1,6 +1,6 @@
 Package.describe({
   name: 'innovationswitch:liberty.adfs-oauth',
-  version: '0.0.5',
+  version: '0.0.8',
   summary: 'Oauth2 authentication for Liberty',
   git: 'https://github.com/InnovationSwitch/liberty.adfs-oauth',
   documentation: 'README.md'
