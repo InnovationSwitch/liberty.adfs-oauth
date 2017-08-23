@@ -1,6 +1,7 @@
 Libertyadfsoauth = {};
 
-OAuth.registerService('libertyadfsoauth', 2, null, function (query) {
+//OAuth.registerService('libertyadfsoauth', 2, null, function (query) {
+OAuth.registerService('adfsoauth', 2, null, function (query) {
 
     var config = Companies.findOne({slug: 'liberty'});
 
