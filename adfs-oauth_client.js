@@ -48,7 +48,7 @@ Libertyadfsoauth.requestCredential = function (options, credentialRequestComplet
     loginUrlParameters.prompt = 'consent'
   }
 
-  var loginStyle = OAuth._loginStyle('libertyadfsoauth', config, options);
+  var loginStyle = OAuth._loginStyle('adfsoauth', config, options);
   _.extend(loginUrlParameters, {
     "response_type": "code",
     "client_id":  config.clientId,
@@ -62,7 +62,7 @@ Libertyadfsoauth.requestCredential = function (options, credentialRequestComplet
     }).join("&");
 
   OAuth.launchLogin({
-    loginService: "libertyadfsoauth",
+    loginService: "adfsoauth",
     loginStyle: loginStyle,
     loginUrl: loginUrl,
     credentialRequestCompleteCallback: credentialRequestCompleteCallback,
